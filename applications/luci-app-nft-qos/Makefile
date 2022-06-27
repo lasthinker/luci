@@ -6,7 +6,7 @@
 
 include $(TOPDIR)/rules.mk
 
-LUCI_TITLE:=Qos over Nftables
+LUCI_TITLE:=QoS Over NFT
 LUCI_DEPENDS:=+nft-qos
 LUCI_PKGARCH:=all
 
