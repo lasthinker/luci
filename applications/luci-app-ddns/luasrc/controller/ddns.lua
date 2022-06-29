@@ -10,6 +10,7 @@ local NX   = require "nixio"
 local NXFS = require "nixio.fs"
 local DISP = require "luci.dispatcher"
 local HTTP = require "luci.http"
+local I18N = require "luci.i18n" 		-- not globally avalible here
 local IPKG = require "luci.model.ipkg"
 local SYS  = require "luci.sys"
 local UCI  = require "luci.model.uci"
@@ -23,6 +24,8 @@ local srv_ver_min = "2.7.7"			-- minimum version of service required
 local app_name    = "luci-app-ddns"
 local app_title   = "Dynamic DNS"
 local app_version = "2.4.9-1"
+
+local translate = I18N.translate
 
 function index()
 	local nxfs	= require "nixio.fs"		-- global definitions not available
