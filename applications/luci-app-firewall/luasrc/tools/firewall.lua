@@ -7,6 +7,8 @@ local ut = require "luci.util"
 local ip = require "luci.ip"
 local nx = require "nixio"
 
+local translate, translatef = luci.i18n.translate, luci.i18n.translatef
+
 local function _(...)
 	return tostring(translate(...))
 end
